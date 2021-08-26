@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Attendance System</title>
+</head>
+<body>
+    <section class="landing-page">
+        <div class="container-fluid row ">
+            <div class="col-md-2 sidenav-bar">
+                <a href="/" class="logo d-flex"><img src="./images/logo.svg" alt=""><span>Pizza Hut</span></a>
+                    <ul class="nav-links">
+                        <li><a href="/" ><img src="./images/Dashboard-icon.svg" alt="">Dashboard</a></li>
+
+                        <li><a href="/employees"><img src="./images/employee-icon.svg" alt="">Employees</a></li>
+
+                        <li><a href="/calendar"><img src="./images/calendar-icon.svg" alt="">Calendar</a></li>
+
+                        <li><a href="/leave" ><img src="./images/leave-icon.svg" alt="">Leave</a></li>
+
+                        <li><a href="/record"><img src="./images/record-icon.svg" alt="">Record</a></li>
+
+                    </ul>
+                    <a href="/email" class="contact-admin-btn"><img src="./images/contact-admin-logo.svg" alt="">Contact Admin</a>
+            </div>
+
+            <div class="col-md-10">
+                <div class="header">
+                    <a href="/" class="page-title">Dashboard</a>
+                    <div class="checkin-user">
+                        <a href="/checkin" class="checkin-btn"><img src="./images/checkin-icon.svg" alt="">Check In</a>
+                        <a href="/notification" class="notify-btn"><img src="./images/notification-icon.svg" alt=""></a>
+                        <div class="dropdown">
+                            <div class="dropbtn user">
+                                <img src="images/user-img.svg" alt=""></img><span class="username">John Wick</span>
+                                <img src="images/user-dropdown-icon.svg" alt=""></img>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#"><img src="./images/user-icon.svg">Profile</a>
+                                <a href="#"><img src="./images/chnage-pass-icon.svg">Change Password</a>
+                                <a href="/login"><img src="./images/logout-icon.svg">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                    <!-- contents of landing page of employee -->
+
+                <div class="row dashboard-contents">
+                    <div class="col-md-7 cal-events">
+                        <div class="calendar">
+
+                        </div>
+
+                        <div class="upcoming-events">
+                            <ul>
+                                <li>
+                                    <div class="event-info">
+                                        <div class="date">
+                                            <p class="month">JUL</p>
+                                            <p class="day">24</p>
+                                        </div>
+                                        <p class="event-name">Guru Purnima</p>
+                                    </div>
+                                    <p class="holiday-type"><span>Holiday</span><img src="./images/event-color-one.svg" alt=""></p>
+                                </li>
+
+                                <li>
+                                    <div class="event-info">
+                                        <div class="date">
+                                            <p class="month">JUL</p>
+                                            <p class="day">24</p>
+                                        </div>
+                                        <p class="event-name">Guru Purnima</p>
+                                    </div>
+                                    <p class="holiday-type"><span>Holiday</span><img src="./images/event-color-one.svg" alt=""></p>
+                                </li>
+
+                                <li>
+                                    <div class="event-info">
+                                        <div class="date">
+                                            <p class="month">JUL</p>
+                                            <p class="day">24</p>
+                                        </div>
+                                        <p class="event-name">Guru Purnima</p>
+                                    </div>
+                                    <p class="holiday-type"><span>Holiday</span><img src="./images/event-color-one.svg" alt=""></p>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-5 leaves">
+                        <div class="leave-data">
+                            <h2>Leaves</h2>
+                            <div class="leave-data-box">
+                                <div class="leave-taken-remaining">
+                                    <div class="taken">
+                                        <p>Leaves Taken</p>
+                                        <h4>5</h4>
+                                    </div>
+
+                                    <div class="line">
+                                    </div>
+                                    
+                                    <div class="remaining">
+                                        <p>Remaining Leaves</p>
+                                        <h4>11</h4>
+                                    </div>
+                                </div>
+                                <a href="/applyleave" class="apply">APPLY LEAVE</a>
+                                
+                            </div>
+                        </div>
+
+                        <!-- employees on leave -->
+                        <div class="emp-leave">
+                            <p class="title">Employees on Leave</p>
+                            <div class="hello">
+
+                                <div class="offline-users scrollbar-leave" id="style-1">
+                                    <ul class="force-overflow">
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+    
+                                        <li>
+                                            <div class="left-info d-flex">
+                                                <img src="./images/offine-users-icon.svg" alt="">
+                                            <div class="user">
+                                                <h4>Eren Yeager</h4>
+                                                <h5>Front End</h5>
+                                            </div>
+                                            </div>
+                                            <p>Till 01/02/2021</p>
+                                        </li>
+                                        <div class="leave-h-line">
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                </div>
+
+        </div>
+    </section>
+
+
+    
+
+    
+</body>
+</html>
