@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    color:black;
+}
+
+.login-page {
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+.pizzahut {
+    width: 632px;
+}
+
+.right-container {
+    padding: 128px 110px 0px 110px;
+}
+
+.heading {
+    margin-bottom: 120px;
+    font-weight: 500;
+    font-size: 42px;
+    color: #0B0B0B;
+}
+
+.form-title {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2f2f2f;
+}
+
+.form-content {
+    font-size: 16px;
+    color: #585858;
+}
+
+.form-check {
+    margin-bottom: 72px;
+}
+
+.check-box {
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #737373;
+    margin-right: 165px;
+}
+
+.forgotpassword {
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #6C6C6D;
+    border-bottom: 1px solid #6C6C6D;
+    text-decoration: none;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+    color: rgba(88, 88, 88, 1);
+}
+
+.container {
+    padding-top: 50px;
+    margin: auto;
+}
+
+.login-btn {
+    background: #17B182;
+    border-radius: 5px;
+    padding: 12px 49px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: #FFFFFF;
+    margin-bottom: 62px;
+}
+
+// forgot password page 
+.reset-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: #6C6C6C;
+    margin-bottom: 36px;
+    width: 400px;
+}
+
+.reset-email {
+    padding: 14px 210px 14px 16px;
+    margin-bottom: 16px;
+    border-color: #FF3B3B;
+    width:100%;
+
+}
+
+.red-text {
+    font-size: 16px;
+    color: #FF3B3B;
+    margin-bottom: 32px;
+}
+
+.back-arrow {
+    margin-right: 11px;
+}
