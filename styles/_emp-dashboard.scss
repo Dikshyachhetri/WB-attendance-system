@@ -97,7 +97,7 @@
     font-size: 28px;
     color: #2f2f2f;
     margin-top: 32px;
-    margin-bottom: 36px;
+    margin-bottom: 42px;
   }
   .checkin-user {
     @include flex(space-between, center, row);
@@ -171,9 +171,61 @@
 
 .dashboard-contents {
   .calendar {
-    height: 656px;
-    background-color: #f39c9c;
+    // height: 656px;
     margin-bottom: 20px;
+
+    .calendar_header {
+      @include flex(space-between, center, row);
+      margin-bottom: 16px;
+      .calendar_monthyear {
+        font-weight: 500;
+        font-size: 24px;
+        color: #2f2f2f;
+      }
+
+      .calendar_prev {
+        margin-right: 16px;
+      }
+    }
+
+    .calendar_body {
+      padding: 24px;
+      background: #ffffff;
+
+      .calendar_weekdays {
+        @include flex(space-around, center, row);
+        // padding: 14px 40px;
+        padding: 14px 0;
+        background: #f0f4ff;
+        margin-bottom: 8px;
+        .calendar_weekday {
+          cursor: pointer;
+        }
+      }
+
+      .calendar_days {
+        @include flex(space-around, center, row);
+        text-align: center;
+        flex-wrap: wrap;
+        .calendar_day {
+          height: 92px;
+          width: 92px;
+          @include flex(center, center, column);
+          font-weight: 500;
+          font-size: 18px;
+          color: #ababab;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+        .active {
+          color: #2f2f2f;
+        }
+
+        // display: flex;
+      }
+    }
   }
 
   .leaves {
@@ -280,7 +332,7 @@
       }
       //   scroll-bar of onleave employee
       .scrollbar-leave {
-        height: 519px;
+        height: 550px;
         overflow-y: scroll;
       }
     }

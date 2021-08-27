@@ -126,7 +126,7 @@
   font-size: 28px;
   color: #2f2f2f;
   margin-top: 32px;
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .header .checkin-user {
@@ -216,9 +216,108 @@
 }
 
 .dashboard-contents .calendar {
-  height: 656px;
-  background-color: #f39c9c;
   margin-bottom: 20px;
+}
+
+.dashboard-contents .calendar .calendar_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.dashboard-contents .calendar .calendar_header .calendar_monthyear {
+  font-weight: 500;
+  font-size: 24px;
+  color: #2f2f2f;
+}
+
+.dashboard-contents .calendar .calendar_header .calendar_prev {
+  margin-right: 16px;
+}
+
+.dashboard-contents .calendar .calendar_body {
+  padding: 24px;
+  background: #ffffff;
+}
+
+.dashboard-contents .calendar .calendar_body .calendar_weekdays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 14px 0;
+  background: #f0f4ff;
+  margin-bottom: 8px;
+}
+
+.dashboard-contents .calendar .calendar_body .calendar_weekdays .calendar_weekday {
+  cursor: pointer;
+}
+
+.dashboard-contents .calendar .calendar_body .calendar_days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dashboard-contents .calendar .calendar_body .calendar_days .calendar_day {
+  height: 92px;
+  width: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ababab;
+}
+
+.dashboard-contents .calendar .calendar_body .calendar_days .calendar_day p {
+  margin-bottom: 0;
+}
+
+.dashboard-contents .calendar .calendar_body .calendar_days .active {
+  color: #2f2f2f;
 }
 
 .dashboard-contents .leaves .leave-data {
@@ -361,7 +460,7 @@
 }
 
 .dashboard-contents .leaves .emp-leave .scrollbar-leave {
-  height: 519px;
+  height: 550px;
   overflow-y: scroll;
 }
 
