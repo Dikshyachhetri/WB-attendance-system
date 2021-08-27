@@ -214,6 +214,9 @@
           font-weight: 500;
           font-size: 18px;
           color: #ababab;
+          &:hover {
+            background: #f0f4ff;
+          }
 
           p {
             margin-bottom: 0;

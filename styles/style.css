@@ -312,6 +312,10 @@
   color: #ababab;
 }
 
+.dashboard-contents .calendar .calendar_body .calendar_days .calendar_day:hover {
+  background: #f0f4ff;
+}
+
 .dashboard-contents .calendar .calendar_body .calendar_days .calendar_day p {
   margin-bottom: 0;
 }
