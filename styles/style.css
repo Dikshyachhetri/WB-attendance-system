@@ -65,6 +65,10 @@
   margin-right: 16px;
 }
 
+.logo span {
+  display: none;
+}
+
 .nav-links {
   padding: 0;
 }
@@ -79,6 +83,10 @@
   font-size: 16px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+.nav-links li a span {
+  display: none;
 }
 
 .nav-links li a:hover {
@@ -119,6 +127,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header .page-title {
@@ -551,6 +561,15 @@
 
 .cal-events .upcoming-events ul li p {
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .logo span {
+    display: unset;
+  }
+  .nav-links li a span {
+    display: unset;
+  }
 }
 
 * {
