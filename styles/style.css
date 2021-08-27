@@ -25,10 +25,21 @@
 
 .sidenav-bar {
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
-  padding: 22px 71px 36px 24px;
+  padding-top: 22px;
+  padding-bottom: 36px;
   white-space: nowrap;
   font-weight: 500;
   font-size: 18px;
@@ -46,6 +57,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .logo img {
@@ -54,7 +67,6 @@
 
 .nav-links {
   padding: 0;
-  margin-bottom: 561px;
 }
 
 .nav-links li a {
@@ -314,6 +326,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .dashboard-contents .leaves .emp-leave .offline-users ul li .left-info img {
@@ -387,6 +401,7 @@
 
 .cal-events .upcoming-events ul li:hover {
   border: 2px solid #f0466f;
+  cursor: pointer;
 }
 
 .cal-events .upcoming-events ul li .event-info {
