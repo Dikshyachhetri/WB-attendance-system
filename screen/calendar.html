@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout page</title>
+    <!-- link for icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- css link  -->
+    <link rel="stylesheet" href="../css/calendar.css">
+    <!-- font links  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="calendarpage">
+        <div class="container-fluid row ">
+            <div class="col-md-2 col-sm-1">
+                <div class="sidenav">
+                    <div class="sidenav-top">
+                        <a href="/" class="logo d-flex"><img src="../images/logo.svg" alt=""><span>Pizza Hut</span></a>
+                        <ul class="nav-links">
+                            <li><a href="/"><img src="../images/Dashboard-icon.svg" alt=""
+                                        class="sidenav-img"><span>Dashboard</span></a>
+                            </li>
+
+                            <li><a href="/employees"><img src="../images/employee-icon.svg" alt=""
+                                        class="sidenav-img"><span>Employees</span></a></li>
+
+                            <li><a href="/calendar"><img src="../images/calendar-icon.svg" alt=""
+                                        class="sidenav-img"><span>Calendar</span></a></li>
+
+                            <li><a href="/leave"><img src="../images/leave-icon.svg" alt=""
+                                        class="sidenav-img"><span>Leave</span></a></li>
+
+                            <li><a href="/record"><img src="../images/record-icon.svg" alt=""
+                                        class="sidenav-img"><span>Daily Updates</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <a href="/email" class="contact-admin-btn"><img src="../images/contact-admin-logo.svg"
+                            alt="">Contact
+                        Admin</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-10">
+                <div class="navbar">
+                    <a href="/" class="page-title">Calendar</a>
+                    <div class="checkin-user">
+                        <a href="/checkin" class="checkin-btn"><img src="../images/checkin-icon.svg" alt="">Check In</a>
+                        <a href="/notification" class="notify-btn"><img src="../images/notification-icon.svg"
+                                alt=""></a>
+                        <div class="dropdown">
+                            <div class="dropbtn user">
+                                <img src="../images/user-img.svg" alt=""></img><span class="username">John Wick</span>
+                                <img src="../images/user-dropdown-icon.svg" alt=""></img>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#"><img src="../images/user-icon.svg">Profile</a>
+                                <a href="#"><img src="../images/chnage-pass-icon.svg">Change Password</a>
+                                <a href="/login"><img src="../images/logout-icon.svg">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- contents of calendar page -->
+
+                <div class="row calendar-contents d-flex">
+                    <div class="col-md-9 cal-events">
+                        <div class="calendar">
+                            <div class="calendar_header d-flex justify-content-between align-items-center">
+                                <div class="calendar_monthyear">
+                                    <span class="calendar_month">August</span>
+                                    <span class="calendar_year">2021</span>
+                                    <img src="../images/calendar_down_arrow.svg" alt="">
+                                </div>
+                                <div class="calendar_prev_next d-flex">
+                                    <div class="calendar_prev">
+                                        <img src="../images/calendar_prev.svg" alt="">
+                                    </div>
+
+                                    <div class="calendar_next">
+                                        <img src="../images/calendar_next.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calendar_body">
+                                <div class="calendar_weekdays d-flex justify-content-around align-items-center">
+                                    <div class="calendar_weekday">S</div>
+
+                                    <div class="calendar_weekday">M</div>
+
+                                    <div class="calendar_weekday">T</div>
+
+                                    <div class="calendar_weekday">W</div>
+
+                                    <div class="calendar_weekday">T</div>
+
+                                    <div class="calendar_weekday">F</div>
+
+                                    <div class="calendar_weekday">S</div>
+                                </div>
+
+                                <div class="calendar_days d-flex justify-content-around align-items-center">
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">1</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">2</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">3</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">4</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">5</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">6</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">7</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">8</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">9</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">10</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">11</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">12</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">13</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">14</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">15</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">16</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">17</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">18</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">19</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">20</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">21</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">22</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">23</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">24</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">25</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">26</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">27</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">28</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">29</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">30</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day active">
+                                        <p class="calendar_day_text">31</p>
+                                        <div class="event-dots">
+                                            <img src="../images/calendar-event-color-blue.svg" alt="">
+                                            <img src="../images/calendar-event-color-orange.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day">
+                                        <p class="calendar_day_text">1</p>
+                                        <div class="event-dots">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day">
+                                        <p class="calendar_day_text">2</p>
+                                        <div class="event-dots">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day">
+                                        <p class="calendar_day_text">3</p>
+                                        <div class="event-dots">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_day">
+                                        <p class="calendar_day_text">4</p>
+                                        <div class="event-dots">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="calendar-events">
+                                <img src="../images/event-color-three.svg" alt="" class="calendar-events-img"><span
+                                    class="calendar-events-text">Meeting</span>
+                                <img src="../images/event-color-two.svg" alt="" class="calendar-events-img"><span
+                                    class="calendar-events-text">Event</span>
+                                <img src="../images/event-color-one.svg" alt=""
+                                    class="calendar-events-img"><span>Holiday</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="events-section col-md-3">
+                        <div class="upcoming-events">
+                            <h3 class="events-heading">Upcoming Events</h3>
+                            <div class="upcoming-events-body">
+                                <div class="event-list">
+                                <img src="../images/event-color-three.svg" alt="" class="calendar-events-img"><span
+                                    class="calendar-events-text">Meeting at 1 PM</span>
+                                </div>
+                                <div class="event-list">
+
+                                <img src="../images/event-color-two.svg" alt="" class="calendar-events-img"><span
+                                    class="calendar-events-text">Futsal at 3 PM</span>
+                                </div>
+                                <div class="event-list">
+
+                                <img src="../images/event-color-one.svg" alt=""
+                                    class="calendar-events-img"><span>Gathering at 5 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upcoming-events">
+                            <h3 class="events-heading">Day's Activities</h3>
+                            <div class="upcoming-events-body">
+                                <div class="event-list">
+                                    <img src="../images/event-color-three.svg" alt="" class="calendar-events-img"><span
+                                        class="calendar-events-text">Meeting at 1 PM</span>
+                                    </div>
+                                    <div class="event-list">
+    
+                                    <img src="../images/event-color-two.svg" alt="" class="calendar-events-img"><span
+                                        class="calendar-events-text">Futsal at 3 PM</span>
+                                    </div>
+                                    <div class="event-list">
+    
+                                    <img src="../images/event-color-one.svg" alt=""
+                                        class="calendar-events-img"><span>Gathering at 5 PM</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

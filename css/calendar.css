@@ -5,16 +5,15 @@
           box-sizing: border-box;
 }
 
-.notification {
+.calendarpage {
   font-family: Lexend;
   font-style: normal;
-  font-weight: normal;
+  font-size: 16px;
+  color: #2F2F2F;
   background: #fcfcf7;
 }
 
 .container-fluid {
-  width: 100%;
-  margin: auto;
   padding-left: 0px;
 }
 
@@ -23,7 +22,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   background-color: #ffffff;
 }
 
@@ -36,7 +34,6 @@
   white-space: nowrap;
   font-weight: 500;
   font-size: 18px;
-  color: #2c2c2c;
   text-decoration: none;
 }
 
@@ -56,7 +53,6 @@
 
 .nav-links li {
   list-style: none;
-  color: #7c6666;
 }
 
 .nav-links li a {
@@ -95,12 +91,11 @@
 }
 
 .nav-links li a:hover .sidenav-img {
-  color: white;
+  color: white !important;
 }
 
 .contact-admin-btn {
   padding: 16px 16.5px;
-  margin-bottom: 20px;
   display: block;
   text-align: center;
   font-weight: 500;
@@ -131,8 +126,7 @@
   font-weight: 500;
   font-size: 28px;
   color: #2f2f2f;
-  margin-top: 32px;
-  margin-bottom: 42px;
+  margin: 32px 0px;
   text-decoration: none;
 }
 
@@ -219,61 +213,123 @@
   display: block;
 }
 
-.header {
-  margin-bottom: 41px !important;
+.calendar-contents {
+  background: white;
+  height: 938px;
 }
 
-.header img {
-  margin-right: 7px;
+.calendar {
+  padding: 32px 14px 52px 32px;
+  margin-bottom: 20px;
 }
 
-.color-icons {
-  margin-right: 30px;
+.calendar .calendar_header {
+  margin-bottom: 16px;
 }
 
-.first-date {
-  margin-top: 15px !important;
+.calendar .calendar_header .calendar_monthyear {
+  font-weight: 500;
+  font-size: 24px;
+  color: #2f2f2f;
 }
 
-.not-date {
-  margin-top: 0px;
+.calendar .calendar_header .calendar_prev {
+  margin-right: 16px;
+}
+
+.calendar .calendar_body {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #BEBEBE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 694px;
+  margin-bottom: 44px;
+}
+
+.calendar .calendar_body .calendar_weekdays {
+  background: #f0f4ff;
   margin-bottom: 8px;
 }
 
-.not-date,
-.not-time {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #828282;
+.calendar .calendar_body .calendar_weekdays .calendar_weekday {
+  padding: 36px 42px;
+  cursor: pointer;
 }
 
-.not-lists {
+.calendar .calendar_body .calendar_days {
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calendar .calendar_body .calendar_days .calendar_day {
+  height: 92px;
+  width: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.not-time {
-  margin-top: 0px !important;
-  margin-bottom: 71px;
-}
-
-.not-details {
-  background: #f3f3f3;
-  border: 0.5px solid #bbbbbb;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 12px;
-  padding: 28px 350px 28px 40px;
-  width: 100%;
-  margin-bottom: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 500;
   font-size: 18px;
-  color: #454545;
+  color: #ababab;
 }
 
-.timeline {
-  margin-left: 18px;
-  margin-right: 48px;
+.calendar .calendar_body .calendar_days .calendar_day:hover {
+  background: #f0f4ff;
 }
-/*# sourceMappingURL=notification.css.map */
+
+.calendar .calendar_body .calendar_days .calendar_day p {
+  margin-bottom: 0;
+}
+
+.calendar .calendar_body .calendar_days .active {
+  color: #2f2f2f;
+}
+
+.calendar-events {
+  text-align: center;
+}
+
+.calendar-events-img {
+  margin-right: 12px;
+}
+
+.calendar-events-text {
+  font-weight: normal;
+  font-size: 16px;
+  color: #2F2F2F;
+  margin-right: 24px;
+}
+
+.upcoming-events {
+  margin: 52px 0px 44px 0px;
+  padding: 8px;
+}
+
+.upcoming-events .events-heading {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2F2F2F;
+}
+
+.upcoming-events .upcoming-events-body {
+  height: 255px;
+  background: #FDFCFC;
+  border: 1px solid #BEBEBE;
+  padding: 16px;
+}
+
+.upcoming-events .upcoming-events-body .event-list {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=calendar.css.map */

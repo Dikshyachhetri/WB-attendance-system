@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notification page</title>
+    <title>Checkout page</title>
     <!-- link for icon  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- css link  -->
-    <link rel="stylesheet" href="../css/notification.css">
+    <link rel="stylesheet" href="../css/checkout.css">
     <!-- font links  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <section class="notification">
+    <section class="checkout">
         <div class="container-fluid row ">
             <div class="col-md-3 col-sm-1 d-flex">
                 <div class="sidenav d-flex justify-content-between">
@@ -73,15 +73,13 @@
                     </div>
 
                     <a href="/email" class="contact-admin-btn"><img src="../images/contact-admin-logo.svg"
-                            alt="">Contact
-                        Admin</a>
+                            alt="">Contact Admin</a>
                 </div>
             </div>
             <div class="col-md-9">
                 <div class="navbar">
-                    <a href="/" class="page-title">Notification</a>
+                    <a href="/" class="page-title">Check Out</a>
                     <div class="checkin-user">
-                        <a href="/checkin" class="checkin-btn"><img src="../images/checkin-icon.svg" alt="">Check In</a>
                         <a href="/notification" class="notify-btn"><img src="../images/notification-icon.svg"
                                 alt=""></a>
                         <div class="dropdown">
@@ -98,50 +96,32 @@
                     </div>
                 </div>
                 <!-- <div class="row"> -->
-                <div class=" header">
-                    <img src="../images/green.svg" />
-                    <span class="color-icons">Leave</span>
-                    <img src="../images/orange.svg" />
-                    <span class="color-icons">Meeting</span>
-                    <img src="../images/blue.svg" />
-                    <span class="color-icons">Event</span>
-                    <img src="../images/red.svg" />
-                    <span class="color-icons">Holiday</span>
-                </div>
-                <div class="not-lists">
-                    <div>
-                        <p class="not-date first-date">June 24, 2021</p>
-                        <p class="not-time">15:25:44</p>
-                        <p class="not-date">June 24, 2021</p>
-                        <p class="not-time">15:25:44</p>
-                        <p class="not-date">June 24, 2021</p>
-                        <p class="not-time">15:25:44</p>
-                        <p class="not-date">June 24, 2021</p>
-                        <p class="not-time">15:25:44</p>
-                        <p class="not-date">June 24, 2021</p>
-                        <p class="not-time">15:25:44</p>
-                    </div>
-                    <div>
-                        <img src="../images/timeline.svg" class="timeline"></img>
-                    </div>
-                    <div>
-                        <div class="not-details">
-                            Your leave request has been granted
+                    <form class="row">
+                        <h1 class="form-heading">Daily Update</h1>
+                        <div class="top-row ">
+                          <div class="date-box">
+                            <label class="form-label">Date:</label>
+                            <span>05/02/2021</span>
+                          </div>
+                          <div>
+                            <label class="form-label">CheckIn Time:</label>
+                            <span>17:55:45</span>
+                          </div>
                         </div>
-                        <div class="not-details">
-                            Your leave request has been granted
+                          
+                        <div class="col-md-8 col-sm-12">
+                          <label for="inputAddress" class="form-label">Topic</label>
+                          <input type="text" class="form-control topic" id="inputAddress" placeholder="Login Page">
                         </div>
-                        <div class="not-details">
-                            Your leave request has been granted
+                        <div class="col-md-8 col-sm-12">
+                          <label for="inputAddress2" class="form-label">Detail</label>
+                          <textarea type="text" class="form-control details" id="inputAddress2" placeholder="Login page completed today"></textarea>
                         </div>
-                        <div class="not-details">
-                            Your leave request has been granted
+                    
+                        <div>
+                          <button type="submit" class="checkout-btn">CHECK OUT</button>
                         </div>
-                        <div class="not-details">
-                            Your leave request has been granted
-                        </div>
-                    </div>
-                </div>
+                      </form>
             </div>
         </div>
     </section>

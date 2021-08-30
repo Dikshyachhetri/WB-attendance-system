@@ -3,13 +3,13 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.login-page {
   font-family: Lexend;
   font-style: normal;
   font-weight: normal;
   color: black;
-}
-
-.login-page {
   max-width: 1440px;
   overflow: hidden;
 }

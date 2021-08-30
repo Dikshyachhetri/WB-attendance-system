@@ -5,16 +5,15 @@
           box-sizing: border-box;
 }
 
-.notification {
+.checkout {
   font-family: Lexend;
   font-style: normal;
-  font-weight: normal;
+  font-size: 16px;
+  color: #2F2F2F;
   background: #fcfcf7;
 }
 
 .container-fluid {
-  width: 100%;
-  margin: auto;
   padding-left: 0px;
 }
 
@@ -36,7 +35,6 @@
   white-space: nowrap;
   font-weight: 500;
   font-size: 18px;
-  color: #2c2c2c;
   text-decoration: none;
 }
 
@@ -56,7 +54,6 @@
 
 .nav-links li {
   list-style: none;
-  color: #7c6666;
 }
 
 .nav-links li a {
@@ -95,7 +92,7 @@
 }
 
 .nav-links li a:hover .sidenav-img {
-  color: white;
+  color: white !important;
 }
 
 .contact-admin-btn {
@@ -131,8 +128,7 @@
   font-weight: 500;
   font-size: 28px;
   color: #2f2f2f;
-  margin-top: 32px;
-  margin-bottom: 42px;
+  margin: 32px 0px;
   text-decoration: none;
 }
 
@@ -219,61 +215,65 @@
   display: block;
 }
 
-.header {
-  margin-bottom: 41px !important;
+form {
+  padding: 24px;
+  background: #FFFFFF;
 }
 
-.header img {
-  margin-right: 7px;
+.form-heading {
+  margin-bottom: 48px;
+  font-weight: 500;
+  font-size: 24px;
 }
 
-.color-icons {
-  margin-right: 30px;
-}
-
-.first-date {
-  margin-top: 15px !important;
-}
-
-.not-date {
-  margin-top: 0px;
-  margin-bottom: 8px;
-}
-
-.not-date,
-.not-time {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #828282;
-}
-
-.not-lists {
+.top-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
 }
 
-.not-time {
-  margin-top: 0px !important;
-  margin-bottom: 71px;
+.date-box {
+  margin-right: 96px;
 }
 
-.not-details {
-  background: #f3f3f3;
-  border: 0.5px solid #bbbbbb;
+.form-label {
+  font-weight: 500;
+  margin-right: 8px;
+  color: #000000;
+  margin-bottom: 18px !important;
+}
+
+.form-label span {
+  font-weight: normal;
+  color: #2f2f2f;
+}
+
+.topic,
+.details {
+  background: #FFFFFF;
+  border: 1px solid #BEBEBE;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 12px;
-  padding: 28px 350px 28px 40px;
-  width: 100%;
-  margin-bottom: 28px;
-  font-size: 18px;
-  color: #454545;
+          box-sizing: border-box;
+  margin-bottom: 26px;
 }
 
-.timeline {
-  margin-left: 18px;
-  margin-right: 48px;
+.details {
+  height: 290px;
 }
-/*# sourceMappingURL=notification.css.map */
+
+.checkout-btn {
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 16px 32px;
+  background: #F03454;
+  border: none;
+  margin-bottom: 212px;
+}
+/*# sourceMappingURL=checkout.css.map */
