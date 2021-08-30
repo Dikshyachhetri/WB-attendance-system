@@ -62,7 +62,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 95px 20px 24px;
+  padding: 20px 18px;
   text-decoration: none;
   border: 1px solid #ffffff;
   font-weight: 500;
@@ -215,7 +215,7 @@
 
 .calendar-contents {
   background: white;
-  height: 938px;
+  height: 912px;
 }
 
 .calendar {
