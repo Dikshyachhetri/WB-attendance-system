@@ -1,0 +1,71 @@
+.employee_contents {
+  background: #ffffff;
+  padding: 20px 12px 0 16px;
+  .employee_filters {
+    @include flex(space-between, center, row);
+    margin-bottom: 24px;
+    .emp_filter {
+      padding: 6px 10.5px 6px 16px;
+    }
+    .department {
+      margin-left: 8px;
+      margin-right: 16px;
+    }
+    .search_bar {
+      @include flex(center, center, row);
+      background: #ffffff;
+      border: 1px solid #e4e4e4;
+      padding: 6px 16px;
+      input {
+        outline: none;
+        border: none;
+      }
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .employee_view {
+      @include flex(center, center, row);
+
+      .view {
+        border: 1px solid #f03454;
+        padding: 12px;
+        width: 36px;
+        height: 36px;
+        &:hover {
+          background: #f03454;
+          #list {
+            fill: #ffffff;
+          }
+          #grid {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      .list_view {
+        margin-right: 8px;
+
+        #list {
+          fill: #f03454;
+        }
+
+        // img {
+        //   border: 1px solid #f03454;
+        //   padding: 12px;
+        // }
+      }
+      .grid_view {
+        #grid {
+          fill: #f03454;
+        }
+        img {
+          padding: 12px;
+
+          border: 1px solid #f03454;
+        }
+      }
+    }
+  }
+}

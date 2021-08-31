@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Attendance System</title>
+</head>
+<body>
+    <section class="employee_page">
+        <div class="container-fluid row">
+            <div class="col-md-2 col-sm-1">
+                <div class="sidenav">
+                    <div class="sidenav-top">
+                        <a href="/" class="logo d-flex"><img src="./images/logo.svg" alt=""><span>Pizza Hut</span></a>
+                        <ul class="nav-links">
+                            <li><a href="/" ><img src="./images/Dashboard-icon.svg" alt=""><span>Dashboard</span></a></li>
+    
+                            <li><a href="/employees"><img src="./images/employee-icon.svg" alt=""><span>Employees</span></a></li>
+    
+                            <li><a href="/calendar"><img src="./images/calendar-icon.svg" alt=""><span>Calendar</span></a></li>
+    
+                            <li><a href="/leave" ><img src="./images/leave-icon.svg" alt=""><span>Leave</span></a></li>
+    
+                            <li><a href="/record"><img src="./images/record-icon.svg" alt=""><span>Record</span></a></li>
+    
+                        </ul>
+                    </div>
+                    
+                        <a href="/email" class="contact-admin-btn"><img src="./images/contact-admin-logo.svg" alt="">Contact Admin</a>
+                </div>
+                
+            </div>
+
+            <div class="col-md-10">
+                <div class="header">
+                    <a href="/" class="page-title">Employees</a>
+                    <div class="checkin-user">
+                        <a href="/checkin" class="checkin-btn"><img src="./images/checkin-icon.svg" alt="">Check In</a>
+                        <a href="/notification" class="notify-btn"><img src="./images/notification-icon.svg" alt=""></a>
+                        <div class="dropdown">
+                            <div class="dropbtn user">
+                                <img src="images/user-img.svg" alt=""></img><span class="username">John Wick</span>
+                                <img src="images/user-dropdown-icon.svg" alt=""></img>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#"><img src="./images/user-icon.svg">Profile</a>
+                                <a href="#"><img src="./images/chnage-pass-icon.svg">Change Password</a>
+                                <a href="/login"><img src="./images/logout-icon.svg">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- contents of employee page -->
+                <div class="row">
+                    <div class="employee_contents">
+                        <div class="employee_filters">
+                            <div class="left_filters d-flex">
+                                <div class="search_bar">
+                                    <input type="search"  name="search" placeholder="Search">
+                                    <img src="./images/search_icon.svg" alt="">
+                                </div>
+                                <div class="department">
+                                    <div class="dropdown emp_filter">
+                                        <div class="dropbtn">
+                                            <span class="username">All Department</span>
+                                            <img src="images/faded_dropdown_icon.svg" alt=""></img>
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <a href="#">UI/UX design</a>
+                                            <a href="#">Frontend developer</a>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="emp_status">
+                                    <div class="dropdown emp_filter">
+                                        <div class="dropbtn">
+                                            <img src="./images/active_icon.svg" alt="">
+                                            <span class="username">Active</span>
+                                            <img src="images/faded_dropdown_icon.svg" alt=""></img>
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <!-- <a href="#"><img src="/images/active_icon.svg">Active</a> -->
+                                            <a href="#"><img src="/images/offline_icon.svg">Offline</a>
+                                            <a href="#"><img src="/images/absent_icon.svg">Absent</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="employee_view d-flex">
+                                <div class="list_view">
+                                    <a href="#" class="d-flex">
+                                        <svg class="view" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="list" d="M0.812447 3.41811C1.16892 3.41811 1.4579 3.12913 1.4579 2.77265C1.4579 2.41618 1.16892 2.1272 0.812447 2.1272C0.455972 2.1272 0.166992 2.41618 0.166992 2.77265C0.166992 3.12913 0.455972 3.41811 0.812447 3.41811Z" fill="#F03454"/>
+                                        <path id="list" d="M0.812447 6.6454C1.16892 6.6454 1.4579 6.35642 1.4579 5.99995C1.4579 5.64347 1.16892 5.35449 0.812447 5.35449C0.455972 5.35449 0.166992 5.64347 0.166992 5.99995C0.166992 6.35642 0.455972 6.6454 0.812447 6.6454Z" fill="#F03454"/>
+                                        <path id="list" d="M0.812447 9.8727C1.16892 9.8727 1.4579 9.58372 1.4579 9.22724C1.4579 8.87077 1.16892 8.58179 0.812447 8.58179C0.455972 8.58179 0.166992 8.87077 0.166992 9.22724C0.166992 9.58372 0.455972 9.8727 0.812447 9.8727Z" fill="#F03454"/>
+                                        <path id="list" d="M11.1787 5.35449H3.35575C3.02066 5.35449 2.74902 5.62613 2.74902 5.96122V6.03867C2.74902 6.37376 3.02066 6.6454 3.35575 6.6454H11.1787C11.5137 6.6454 11.7854 6.37376 11.7854 6.03867V5.96122C11.7854 5.62613 11.5137 5.35449 11.1787 5.35449Z" fill="#F03454"/>
+                                        <path id="list" d="M11.1787 8.58179H3.35575C3.02066 8.58179 2.74902 8.85343 2.74902 9.18852V9.26597C2.74902 9.60106 3.02066 9.8727 3.35575 9.8727H11.1787C11.5137 9.8727 11.7854 9.60106 11.7854 9.26597V9.18852C11.7854 8.85343 11.5137 8.58179 11.1787 8.58179Z" fill="#F03454"/>
+                                        <path id="list" d="M11.3935 2.1272H3.57059C3.23551 2.1272 2.96387 2.39884 2.96387 2.73392V2.81138C2.96387 3.14647 3.23551 3.41811 3.57059 3.41811H11.3935C11.7286 3.41811 12.0002 3.14647 12.0002 2.81138V2.73392C12.0002 2.39884 11.7286 2.1272 11.3935 2.1272Z" fill="#F03454"/>
+                                        </svg>
+                                        </a>
+                                    <!-- <img src="./images/list_view_icon.svg" alt=""> -->
+                                </div>
+                                <div class="grid_view">
+                                    <a href="#" class="d-flex">
+                                        
+<svg class="view" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="grid" d="M3.03571 1.5119V3.03571H1.5119V1.5119H3.03571ZM3.79762 10.6548V9.13095C3.79762 8.92888 3.71735 8.73509 3.57446 8.5922C3.43158 8.44932 3.23778 8.36905 3.03571 8.36905H1.5119C1.30984 8.36905 1.11604 8.44932 0.973157 8.5922C0.830272 8.73509 0.75 8.92888 0.75 9.13095V10.6548C0.75 10.8568 0.830272 11.0506 0.973157 11.1935C1.11604 11.3364 1.30984 11.4167 1.5119 11.4167H3.03571C3.23778 11.4167 3.43158 11.3364 3.57446 11.1935C3.71735 11.0506 3.79762 10.8568 3.79762 10.6548ZM3.79762 6.84524V5.32143C3.79762 5.11936 3.71735 4.92557 3.57446 4.78268C3.43158 4.6398 3.23778 4.55952 3.03571 4.55952H1.5119C1.30984 4.55952 1.11604 4.6398 0.973157 4.78268C0.830272 4.92557 0.75 5.11936 0.75 5.32143V6.84524C0.75 7.04731 0.830272 7.2411 0.973157 7.38399C1.11604 7.52687 1.30984 7.60714 1.5119 7.60714H3.03571C3.23778 7.60714 3.43158 7.52687 3.57446 7.38399C3.71735 7.2411 3.79762 7.04731 3.79762 6.84524ZM3.79762 3.03571V1.5119C3.79762 1.30984 3.71735 1.11604 3.57446 0.973157C3.43158 0.830272 3.23778 0.75 3.03571 0.75H1.5119C1.30984 0.75 1.11604 0.830272 0.973157 0.973157C0.830272 1.11604 0.75 1.30984 0.75 1.5119V3.03571C0.75 3.23778 0.830272 3.43158 0.973157 3.57446C1.11604 3.71735 1.30984 3.79762 1.5119 3.79762H3.03571C3.23778 3.79762 3.43158 3.71735 3.57446 3.57446C3.71735 3.43158 3.79762 3.23778 3.79762 3.03571ZM7.60714 10.6548V9.13095C7.60714 8.92888 7.52687 8.73509 7.38399 8.5922C7.2411 8.44932 7.04731 8.36905 6.84524 8.36905H5.32143C5.11936 8.36905 4.92557 8.44932 4.78268 8.5922C4.6398 8.73509 4.55952 8.92888 4.55952 9.13095V10.6548C4.55952 10.8568 4.6398 11.0506 4.78268 11.1935C4.92557 11.3364 5.11936 11.4167 5.32143 11.4167H6.84524C7.04731 11.4167 7.2411 11.3364 7.38399 11.1935C7.52687 11.0506 7.60714 10.8568 7.60714 10.6548ZM7.60714 6.84524V5.32143C7.60714 5.11936 7.52687 4.92557 7.38399 4.78268C7.2411 4.6398 7.04731 4.55952 6.84524 4.55952H5.32143C5.11936 4.55952 4.92557 4.6398 4.78268 4.78268C4.6398 4.92557 4.55952 5.11936 4.55952 5.32143V6.84524C4.55952 7.04731 4.6398 7.2411 4.78268 7.38399C4.92557 7.52687 5.11936 7.60714 5.32143 7.60714H6.84524C7.04731 7.60714 7.2411 7.52687 7.38399 7.38399C7.52687 7.2411 7.60714 7.04731 7.60714 6.84524ZM7.60714 3.03571V1.5119C7.60714 1.30984 7.52687 1.11604 7.38399 0.973157C7.2411 0.830272 7.04731 0.75 6.84524 0.75H5.32143C5.11936 0.75 4.92557 0.830272 4.78268 0.973157C4.6398 1.11604 4.55952 1.30984 4.55952 1.5119V3.03571C4.55952 3.23778 4.6398 3.43158 4.78268 3.57446C4.92557 3.71735 5.11936 3.79762 5.32143 3.79762H6.84524C7.04731 3.79762 7.2411 3.71735 7.38399 3.57446C7.52687 3.43158 7.60714 3.23778 7.60714 3.03571ZM6.84524 1.5119V3.03571H5.32143V1.5119H6.84524ZM10.6548 1.5119V3.03571H9.13095V1.5119H10.6548ZM3.03571 5.32143V6.84524H1.5119V5.32143H3.03571ZM6.84524 5.32143V6.84524H5.32143V5.32143H6.84524ZM10.6548 5.32143H9.13095V6.84524H10.6548V5.32143ZM3.03571 9.13095V10.6548H1.5119V9.13095H3.03571ZM6.84524 9.13095V10.6548H5.32143V9.13095H6.84524ZM10.6548 9.13095V10.6548H9.13095V9.13095H10.6548ZM9.13095 0.75C8.92888 0.75 8.73509 0.830272 8.5922 0.973157C8.44932 1.11604 8.36905 1.30984 8.36905 1.5119V3.03571C8.36905 3.23778 8.44932 3.43158 8.5922 3.57446C8.73509 3.71735 8.92888 3.79762 9.13095 3.79762H10.6548C10.8568 3.79762 11.0506 3.71735 11.1935 3.57446C11.3364 3.43158 11.4167 3.23778 11.4167 3.03571V1.5119C11.4167 1.30984 11.3364 1.11604 11.1935 0.973157C11.0506 0.830272 10.8568 0.75 10.6548 0.75H9.13095ZM8.36905 5.32143C8.36905 5.11936 8.44932 4.92557 8.5922 4.78268C8.73509 4.6398 8.92888 4.55952 9.13095 4.55952H10.6548C10.8568 4.55952 11.0506 4.6398 11.1935 4.78268C11.3364 4.92557 11.4167 5.11936 11.4167 5.32143V6.84524C11.4167 7.04731 11.3364 7.2411 11.1935 7.38399C11.0506 7.52687 10.8568 7.60714 10.6548 7.60714H9.13095C8.92888 7.60714 8.73509 7.52687 8.5922 7.38399C8.44932 7.2411 8.36905 7.04731 8.36905 6.84524V5.32143ZM9.13095 8.36905C8.92888 8.36905 8.73509 8.44932 8.5922 8.5922C8.44932 8.73509 8.36905 8.92888 8.36905 9.13095V10.6548C8.36905 10.8568 8.44932 11.0506 8.5922 11.1935C8.73509 11.3364 8.92888 11.4167 9.13095 11.4167H10.6548C10.8568 11.4167 11.0506 11.3364 11.1935 11.1935C11.3364 11.0506 11.4167 10.8568 11.4167 10.6548V9.13095C11.4167 8.92888 11.3364 8.73509 11.1935 8.5922C11.0506 8.44932 10.8568 8.36905 10.6548 8.36905H9.13095Z" fill="white"/>
+    </svg>
+    
+                                    </a>
+                                    <!-- <img src="./images/grid_view_icon.svg" alt=""> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
