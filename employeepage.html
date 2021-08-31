@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
@@ -153,6 +158,355 @@
                                     <li><a href="#" class="page">Z</a></li>
                                 </ul>
                             </div>
+
+                            <!-- employee_data_list -->
+                            <table data-toggle="table" 
+       data-classes="table"
+       class="borderless"
+       data-striped="false"
+       data-sort-name="Quality"
+       data-sort-order="desc"
+       class="scrollbar-leave" id="style-1"
+       >
+    <thead>
+    <tr>
+        <th data-field="emp_no" data-sortable="true"><span>S.N</span></th>
+        <th data-field="emp_name" data-sortable="true"><span>Name</span></th>
+        <th data-field="emp_dept" data-sortable="true"><span>Department</span></th>
+        <th data-field="emp_email" data-sortable="true"><span>Email-Id</span></th>
+        <th data-field="emp_status" data-sortable="true"><span>Status</span></th>
+        <th data-field="emp_num" data-sortable="false"><span style="vertical-align: 35%;">Mobile Number</span></th>
+    </tr>
+    
+    </thead>
+    
+    
+    <tbody class="force-overflow" >
+        
+   <tr  class="emp_details h-line">
+       
+        <td class="employee_id" >1</td>
+        <td>Shankar Shrestha</td>
+        <td>UI/UX Design</td>
+        <td>Shankar@gmail.com</td>
+        <td><img src="./images/active_icon.svg">Online</td>
+        <td>9841433333</td>
+    </tr>
+
+    <tr class="emp_details">
+        <td class="employee_id" >2</td>
+        <td>Shreejan Bista</td>
+        <td>UI/UX Design</td>
+        <td>Shreejan@gmail.com</td>
+        <td><img src="./images/active_icon.svg">Online</td>
+        <td>9841433333</td>
+    </tr>
+
+    <tr class="emp_details">
+        <td class="employee_id" >3</td>
+        <td>Simron Shrestha</td>
+        <td>Frontend Developer</td>
+        <td>Simron@gmail.com</td>
+        <td><img src="./images/absent_icon.svg">Offline</td>
+        <td>9841433333</td>
+    </tr>
+
+    <tr class="emp_details">
+        <td class="employee_id" >4</td>
+        <td>Dikshya BC</td>
+        <td>Frontend Developer</td>
+        <td>Dikshya@gmail.com</td>
+        <td><img src="./images/absent_icon.svg">Offline</td>
+        <td>9841433333</td>
+    </tr>
+
+    <tr class="emp_details">
+        <td class="employee_id" >5</td>
+        <td>Sarukh Singh</td>
+        <td>Frontend Developer</td>
+        <td>Sarukh@gmail.com</td>
+        <td><img src="./images/active_icon.svg">Online</td>
+        <td>9841433333</td>
+    </tr>
+
+    <tr class="emp_details">
+        <td class="employee_id" >6</td>
+        <td>Binay Sakya</td>
+        <td>UI/UX Design</td>
+        <td>Binay@gmail.com</td>
+        <td><img src="./images/active_icon.svg">Online</td>
+        <td>9841433333</td>
+    </tr>
+    
+
+    
+    
+    </tbody>    
+</table>
+
+                            
+                            <!-- <table class="searchable sortable">
+                                <thead>
+                                  <tr>
+                                    <th>S.N</th>
+                                    <th>Name</th>
+                                    <th>Department</th>
+                                    <th>Email-Id</th>
+                                    <th>Status</th>
+                                    <th>Mobile-Number</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td data-column="emp_no">1</td>
+                                    <td data-column="emp_name">Shankar Shrestha</td>
+                                    <td data-column="emp_dept">UI/UX</td>
+                                    <td data-column="emp_id">Shankar@gmail.com</td>
+                                    <td data-column="emp_status">Active</td>
+                                    <td data-column="emp_phone">9841333333</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td data-column="emp_no">1</td>
+                                    <td data-column="emp_name">Shankar Shrestha</td>
+                                    <td data-column="emp_dept">UI/UX</td>
+                                    <td data-column="emp_id">Shankar@gmail.com</td>
+                                    <td data-column="emp_status">Active</td>
+                                    <td data-column="emp_phone">9841333333</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td data-column="emp_no">1</td>
+                                    <td data-column="emp_name">Shankar Shrestha</td>
+                                    <td data-column="emp_dept">UI/UX</td>
+                                    <td data-column="emp_id">Shankar@gmail.com</td>
+                                    <td data-column="emp_status">Active</td>
+                                    <td data-column="emp_phone">9841333333</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td data-column="emp_no">1</td>
+                                    <td data-column="emp_name">Shankar Shrestha</td>
+                                    <td data-column="emp_dept">UI/UX</td>
+                                    <td data-column="emp_id">Shankar@gmail.com</td>
+                                    <td data-column="emp_status">Active</td>
+                                    <td data-column="emp_phone">9841333333</td>
+                                  </tr>
+                                </tbody>
+                              </table> -->
+
+
+
+
+                            <!-- <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">S.N</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Email-Id</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Mobile Number</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Shankar</td>
+                                    <td>UI/UX Design</td>
+                                    <td>Shankar@gmail.com</td>
+                                    <td>Active</td>
+                                    <td>9841433333</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Shankar</td>
+                                    <td>UI/UX Design</td>
+                                    <td>Shankar@gmail.com</td>
+                                    <td>Active</td>
+                                    <td>9841433333</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Shankar</td>
+                                    <td>UI/UX Design</td>
+                                    <td>Shankar@gmail.com</td>
+                                    <td>Active</td>
+                                    <td>9841433333</td>
+                                  </tr>
+                                    <tr>
+                                    <th scope="row">1</th>
+                                    <td>Shankar</td>
+                                    <td>UI/UX Design</td>
+                                    <td>Shankar@gmail.com</td>
+                                    <td>Active</td>
+                                    <td>9841433333</td>
+                                  </tr>
+                                 
+                                </tbody>
+                              </table> -->
+
+                            <!-- <table class="employee_data_list">
+                                <tr>
+                                  <th>S.N <div class="sort_icon">
+                                      <img src="./images/upward_vector.svg" alt="">
+                                      <img src="./images/downward_vector.svg" alt="">
+                                  </div></th>
+                                  <th>Name <div class="sort_icon">
+                                    <img src="./images/upward_vector.svg" alt="">
+                                    <img src="./images/downward_vector.svg" alt="">
+                                </div></th>
+                                <th>Department <div class="sort_icon">
+                                    <img src="./images/upward_vector.svg" alt="">
+                                    <img src="./images/downward_vector.svg" alt="">
+                                </div></th>
+                                <th>Email-Id <div class="sort_icon">
+                                    <img src="./images/upward_vector.svg" alt="">
+                                    <img src="./images/downward_vector.svg" alt="">
+                                </div></th>
+                                <th>Status <div class="sort_icon">
+                                    <img src="./images/upward_vector.svg" alt="">
+                                    <img src="./images/downward_vector.svg" alt="">
+                                </div></th>
+                                <th>Mobile Number <div class="sort_icon">
+                                </div></th>
+                                  
+                                </tr>
+                                <tr>
+                                    <td class="emp_no">1</td>
+                                    <td class="emp_name">Shankar Shrestha</td>
+                                    <td class="emp_department">UI/UX</td>
+                                    <td class="emp_id">Shankar@gmail.com</td>
+                                    <td class="">
+                                        <img src="./images/list_view_active_icon.svg" alt="">
+                                        <spa>Active</spa>
+                                    </td>
+                                    <td>9841433670</td>
+                                </tr>
+                                
+                                
+
+                                <tr>
+                                    <td class="emp_no">1</td>
+                                    <td class="emp_name">Shankar Shrestha</td>
+                                    <td class="emp_department">UI/UX</td>
+                                    <td class="emp_id">Shankar@gmail.com</td>
+                                    <td class="d-flex">
+                                        <img src="./images/list_view_active_icon.svg" alt="">
+                                        <spa>Active</spa>
+                                    </td>
+                                    <td>9841433670</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="emp_no">1</td>
+                                    <td class="emp_name">Shankar Shrestha</td>
+                                    <td class="emp_department">UI/UX</td>
+                                    <td class="emp_id">Shankar@gmail.com</td>
+                                    <td class="d-flex">
+                                        <img src="./images/list_view_active_icon.svg" alt="">
+                                        <spa>Active</spa>
+                                    </td>
+                                    <td>9841433670</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="emp_no">1</td>
+                                    <td class="emp_name">Shankar Shrestha</td>
+                                    <td class="emp_department">UI/UX</td>
+                                    <td class="emp_id">Shankar@gmail.com</td>
+                                    <td class="d-flex">
+                                        <img src="./images/list_view_active_icon.svg" alt="">
+                                        <span>Active</span>
+                                    </td>
+                                    <td>9841433670</td>
+                                </tr>
+
+                                
+                              </table> -->
+                              
+                            <!-- <div class="employee_data_list">
+                                <ul class="list_sections">
+                                    <li>
+                                        <span>S.N</span>
+                                        <a href="#"><img src="./images/upward_vector.svg" alt=""><img src="./images/downward_vector.svg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <span>Name</span>
+                                        <a href="#"><img src="./images/upward_vector.svg" alt=""><img src="./images/downward_vector.svg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <span>Department</span>
+                                        <a href="#"><img src="./images/upward_vector.svg" alt=""><img src="./images/downward_vector.svg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <span>Email-Id</span>
+                                        <a href="#"><img src="./images/upward_vector.svg" alt=""><img src="./images/downward_vector.svg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <span>Status</span>
+                                        <a href="#"><img src="./images/upward_vector.svg" alt=""><img src="./images/downward_vector.svg" alt=""></a>
+                                    </li>
+                                    
+                                    <li>
+                                        Mobile Number
+                                    </li>
+
+                                </ul>
+                                <div class="h-line">
+                                </div>
+
+                                
+                                <ul>
+                                    <li class="users_list">
+                                        <p class="emp_no">1</p>
+                                        <p class="emp_name">Shankar Shrestha</p>
+                                        <p class="emp_department">UI/UX</p>
+                                        <p class="emp_id">Shankar@gmail.com</p>
+                                        <div class="d-flex">
+                                            <img src="./images/list_view_active_icon.svg" alt="">
+                                            <p>Active</p>
+                                        </div>
+                                        <p>9841433670</p>
+                                    </li>
+
+                                    <li class="users_list">
+                                        <p class="emp_no">1</p>
+                                        <p class="emp_name">Shreejan Bista</p>
+                                        <p class="emp_department">UI/UX</p>
+                                        <p class="emp_id">Shreejan@gmail.com</p>
+                                        <div class="d-flex">
+                                            <img src="./images/list_view_active_icon.svg" alt="">
+                                            <p>Active</p>
+                                        </div>
+                                        <p>9841433670</p>
+                                    </li>
+
+                                    <li class="users_list">
+                                        <p class="emp_no">1</p>
+                                        <p class="emp_name">Simron Shrestha</p>
+                                        <p class="emp_department">Frontend Developer</p>
+                                        <p class="emp_id">Simron@gmail.com</p>
+                                        <div class="d-flex">
+                                            <img src="./images/list_view_Offline_icon.svg" alt="">
+                                            <p>Active</p>
+                                        </div>
+                                        <p>9841433670</p>
+                                    </li>
+
+                                    <li class="users_list">
+                                        <p class="emp_no">1</p>
+                                        <p class="emp_name">Dikshya BC</p>
+                                        <p class="emp_department">Frontend Developer</p>
+                                        <p class="emp_id">Dikshya@gmail.com</p>
+                                        <div class="d-flex">
+                                            <img src="./images/list_view_Offline_icon.svg" alt="">
+                                            <p>Active</p>
+                                        </div>
+                                        <p>9841433670</p>
+                                    </li>
+                                </ul>
+                            </div> -->
                         </div>
                     </div>
                 </div>
