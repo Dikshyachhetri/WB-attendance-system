@@ -12,6 +12,9 @@ li {
   list-style: none;
   text-decoration: none;
   color: rgb(124, 102, 102);
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 body {

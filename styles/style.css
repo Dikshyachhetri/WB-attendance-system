@@ -748,6 +748,7 @@
 .employee_contents .pagination ul a:hover {
   background: #f03454;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .employee_contents .employee_data_list .list_sections {
@@ -881,6 +882,11 @@ li {
   list-style: none;
   text-decoration: none;
   color: #7c6666;
+}
+
+a:hover,
+li:hover {
+  text-decoration: none;
 }
 
 body {
