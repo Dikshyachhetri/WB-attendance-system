@@ -25,7 +25,7 @@
 <body>
     <section class="calendarpage">
         <div class="container-fluid row ">
-            <div class="col-md-2 col-sm-1">
+            <div class="col-md-2 col-sm-2">
                 <div class="sidenav">
                     <div class="sidenav-top">
                         <a href="/" class="logo d-flex"><img src="../images/logo.svg" alt=""><span>Pizza Hut</span></a>
@@ -57,7 +57,7 @@
 
             </div>
 
-            <div class="col-md-10">
+            <div class="col-md-10 col-sm-10">
                 <div class="navbar">
                     <a href="/" class="page-title">Calendar</a>
                     <div class="checkin-user">
@@ -407,44 +407,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="events-section col-md-3">
+                    <div class="events-section col-sm-12 col-lg-3">
                         <div class="upcoming-events">
                             <h3 class="events-heading">Upcoming Events</h3>
-                            <div class="upcoming-events-body">
-                                <div class="event-list">
-                                <img src="../images/yellow-event.svg" alt="" class="calendar-events-img"><span
-                                    class="calendar-events-text">Meeting at 1 PM</span>
-                                </div>
-                                <div class="event-list">
+                            <div class=" upcoming-events-body">
+                                
+                            <div class=" scrollbar-events" id="style-1">
+                                <ul class="force-overflow">
+                                    <li class="event-list">
+                                        <img src="../images/yellow-event.svg" alt="" class="calendar-events-img"><span
+                                            class="calendar-events-text">Meeting at 1 PM</span>
+                                    </li>
+                                    <li class="event-list">
 
-                                <img src="../images/blue-event.svg" alt="" class="calendar-events-img"><span
-                                    class="calendar-events-text">Futsal at 3 PM</span>
-                                </div>
-                                <div class="event-list">
+                                        <img src="../images/blue-event.svg" alt="" class="calendar-events-img"><span
+                                            class="calendar-events-text">Futsal at 3 PM</span>
+                                    </li>
+                                    <li class="event-list">
 
-                                <img src="../images/pink-event.svg" alt=""
-                                    class="calendar-events-img"><span>Gathering at 5 PM</span>
-                                </div>
+                                        <img src="../images/pink-event.svg" alt=""
+                                            class="calendar-events-img"><span>Gathering at 5 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
                             </div>
                         </div>
                         <div class="upcoming-events">
                             <h3 class="events-heading">Day's Activities</h3>
-                            <div class="upcoming-events-body">
-                                <div class="event-list">
+                            <ul class="upcoming-events-body">
+                                <li class="event-list">
                                     <img src="../images/yellow-event.svg" alt="" class="calendar-events-img"><span
                                         class="calendar-events-text">Meeting at 1 PM</span>
-                                    </div>
-                                    <div class="event-list">
-    
+                                </li>
+                                <li class="event-list">
+
                                     <img src="../images/blue-event.svg" alt="" class="calendar-events-img"><span
                                         class="calendar-events-text">Futsal at 3 PM</span>
-                                    </div>
-                                    <div class="event-list">
-    
+                                </li>
+                                <li class="event-list">
+
                                     <img src="../images/pink-event.svg" alt=""
                                         class="calendar-events-img"><span>Gathering at 5 PM</span>
-                                    </div>
-                                </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 

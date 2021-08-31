@@ -149,7 +149,6 @@
 }
 
 .navbar .checkin-user .checkin-btn {
-  padding: 13.5px 42.5px;
   background: #17b182;
   font-weight: 500;
   font-size: 14px;
@@ -165,7 +164,7 @@
 }
 
 .navbar .checkin-user .checkin-btn img {
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .navbar .checkin-user .notify-btn {
@@ -228,7 +227,7 @@
 }
 
 .color-icons {
-  margin-right: 30px;
+  margin-right: 22px;
 }
 
 .first-date {
@@ -256,7 +255,6 @@
 
 .not-time {
   margin-top: 0px !important;
-  margin-bottom: 71px;
 }
 
 .not-details {
@@ -265,7 +263,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-radius: 12px;
-  padding: 28px 350px 28px 40px;
   width: 100%;
   margin-bottom: 28px;
   font-size: 18px;
@@ -275,5 +272,37 @@
 .timeline {
   margin-left: 18px;
   margin-right: 48px;
+}
+
+@media screen and (min-width: 375px) {
+  .checkin-btn {
+    padding: 10px;
+  }
+  .not-details {
+    padding: 10px;
+    margin-bottom: 40px;
+  }
+  .not-time {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .checkin-btn {
+    padding: 13.5px 42.5px;
+  }
+  .not-details {
+    padding: 28px 30px 28px 40px !important;
+    margin-bottom: 28px !important;
+  }
+  .not-time {
+    margin-bottom: 71px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .not-details {
+    padding: 28px 350px 28px 40px !important;
+  }
 }
 /*# sourceMappingURL=notification.css.map */

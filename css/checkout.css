@@ -120,8 +120,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .navbar .page-title {
@@ -216,6 +214,7 @@
 }
 
 form {
+  margin: 30px;
   padding: 24px;
   background: #FFFFFF;
 }
@@ -234,10 +233,6 @@ form {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 32px;
-}
-
-.date-box {
-  margin-right: 96px;
 }
 
 .form-label {
@@ -275,5 +270,17 @@ form {
   background: #F03454;
   border: none;
   margin-bottom: 212px;
+}
+
+@media screen and (min-width: 770px) {
+  .date-box {
+    margin-right: 96px !important;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .date-box {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=checkout.css.map */

@@ -112,7 +112,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 
     .page-title {
         font-weight: 500;
@@ -205,6 +204,7 @@
 
 // checkout body css
 form{
+    margin:30px;
     padding:24px;
     background: #FFFFFF;
 }
@@ -220,9 +220,7 @@ form{
     margin-bottom: 32px;
 }
 
-.date-box {
-    margin-right: 96px;
-}
+
 
 .form-label {
     font-weight: 500;
@@ -245,10 +243,6 @@ form{
 
 }
 
-// .topic {
-//     width: 780px;
-// }
-
 .details {
     height: 290px;
 
@@ -264,4 +258,15 @@ form{
     background: #F03454;
     border: none;
     margin-bottom: 212px;
+}
+
+@media screen  and (min-width:770px) {
+    .date-box {
+        margin-right: 96px !important;
+    }
+}
+@media screen  and (min-width:375px) {
+    .date-box {
+        margin-right: 30px;
+    }
 }
