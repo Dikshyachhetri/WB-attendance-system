@@ -19,14 +19,22 @@
   min-height: 450px;
 }
 
+.scrollbar-card {
+  height: 753px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
 .employee_contents {
   background: #ffffff;
   padding: 20px 12px 0 16px;
   .employee_filters {
-    //   padding: 20px 12px 0 16px;
-
+    flex-wrap: wrap;
     @include flex(space-between, center, row);
     margin-bottom: 24px;
+    .left_filters {
+      flex-wrap: wrap;
+    }
     .emp_filter {
       padding: 6px 10.5px 6px 16px;
     }
@@ -115,7 +123,6 @@
         &:hover {
           background: #f03454;
           color: #ffffff;
-          text-decoration: none;
         }
       }
     }
@@ -142,30 +149,6 @@
         }
       }
     }
-
-    // ul {
-    //   @include flex(space-between, center, column);
-
-    //   .users_list {
-    //     @include flex(space-between, center, row);
-    //     width: 100%;
-    //     p {
-    //       margin-bottom: 0;
-    //       padding: 16px;
-    //     }
-    //     .emp_no {
-    //       margin-right: 25px;
-    //     }
-    //   }
-    // }
-    // .table {
-    //   tr {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     width: 100%;
-    //     align-items: center;
-    //   }
-    // }
   }
 }
 
@@ -223,19 +206,72 @@ th {
   border: none;
 }
 .h-line {
-  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   padding: 0 32px;
   width: 96%;
   margin: auto;
   margin-bottom: 16px;
 }
-// .tbody,
-// td,
-// tfoot,
-// tr,
-// th {
-//   font-weight: normal;
-//   font-size: 16px;
-//   line-height: 24px;
-//   color: #989898;
-// }
+
+// employee_grid_layout_styles
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 11px;
+  .card {
+    width: 206px;
+    margin-bottom: 24px;
+    @include flex(center, center, column);
+    background: #ffffff;
+    border: 1px solid #e4e4e4;
+
+    // height: 330px;
+
+    .card-img {
+      width: 70px;
+      margin: 32px 0 16px 0;
+    }
+
+    .card-body {
+      padding: 0;
+      @include flex(center, center, column);
+
+      .card-title {
+        font-weight: normal;
+        font-size: 18px;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        font-weight: normal;
+        font-size: 14px;
+        color: #8d8d8d;
+        margin-bottom: 32px;
+      }
+
+      .card-text2 {
+        font-weight: normal;
+        font-size: 14px;
+        color: #2f2f2f;
+        margin-bottom: 6px;
+      }
+
+      .card-text3 {
+        font-weight: normal;
+        font-size: 16px;
+        color: #2f2f2f;
+        margin-bottom: 57px;
+      }
+      .phone-icon {
+        vertical-align: sub;
+        margin-right: 8px;
+      }
+      .mail-icon {
+        margin-right: 8px;
+      }
+    }
+  }
+}
