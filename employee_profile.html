@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Attendance System</title>
+</head>
+<body>
+    <section class="employee_page">
+        <div class="container-fluid row">
+            <div class="col-md-2 col-sm-1">
+                <div class="sidenav">
+                    <div class="sidenav-top">
+                        <a href="/" class="logo d-flex"><img src="./images/logo.svg" alt=""><span>Pizza Hut</span></a>
+                        <ul class="nav-links">
+                            <li><a href="/" ><img src="./images/Dashboard-icon.svg" alt=""><span>Dashboard</span></a></li>
+    
+                            <li><a href="/employees"><img src="./images/employee-icon.svg" alt=""><span>Employees</span></a></li>
+    
+                            <li><a href="/calendar"><img src="./images/calendar-icon.svg" alt=""><span>Calendar</span></a></li>
+    
+                            <li><a href="/leave" ><img src="./images/leave-icon.svg" alt=""><span>Leave</span></a></li>
+    
+                            <li><a href="/record"><img src="./images/record-icon.svg" alt=""><span>Record</span></a></li>
+    
+                        </ul>
+                    </div>
+                    
+                        <a href="/email" class="contact-admin-btn"><img src="./images/contact-admin-logo.svg" alt="">Contact Admin</a>
+                </div>
+                
+            </div>
+
+            <div class="col-md-10">
+                <div class="header">
+                    <a href="/" class="page-title">Employees</a>
+                    <div class="checkin-user">
+                        <a href="/checkin" class="checkin-btn"><img src="./images/checkin-icon.svg" alt="">Check In</a>
+                        <a href="/notification" class="notify-btn"><img src="./images/notification-icon.svg" alt=""></a>
+                        <div class="dropdown">
+                            <div class="dropbtn user">
+                                <img src="images/user-img.svg" alt=""></img><span class="username">John Wick</span>
+                                <img src="images/user-dropdown-icon.svg" alt=""></img>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#"><img src="./images/user-icon.svg">Profile</a>
+                                <a href="#"><img src="./images/chnage-pass-icon.svg">Change Password</a>
+                                <a href="/login"><img src="./images/logout-icon.svg">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- contents of employee page -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="top">
+                            <div class="User_name_dept">
+                                <img src="./images/user_profile_picture.svg" class="user_image" alt="">
+                                <p class="name">Eren Yeager</p>
+                                <div class="department">UI/UX</div>
+                            </div>
+                        </div>
+
+                        <div class="bottom">
+                            <div class="leave_rem_taken d-flex">
+                                <div class="leave_remaining">
+                                    <p class="no_day"><span>5</span>/15</p>
+                                    <p> Leave leave remaining</p>
+                                </div>
+
+                                <div class="leave_taken">
+                                    <p class="no_day">15</p>
+                                    <p> Total Leaves Taken</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-md-8 emp_info">
+                        <div>
+                            <p class="details">Details</p>
+                            <div class="h_line">
+                            </div>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label for="fname">Full Name:</label>
+                                      <input type="text" class="form-control" id="fname" value="Eren Yeager" readonly>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="dept">Department</label>
+                                        <input type="text" class="form-control" id="dept" value="UI/UX Designer">
+                                      </div>
+                                  </div>
+                                  
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="username">User Name:</label>
+                                        <input type="text" class="form-control" id="username" value="The One">
+                                      </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email Address:</label>
+                                    <input type="email" class="form-control" id="inputEmail4" value="eren@pizzahut.com">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="dob">Date of Birth:</label>
+                                        <input type="text" class="form-control" id="dob" value="30th Feb 1997">
+                                      </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="gender">Gender:</label>
+                                    <input type="email" class="form-control" id="gender" value="Male">
+                                  </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputAddress">Adress:</label>
+                                        <input type="text" class="form-control" id="inputAddress" value="Lalitpur, Nepal">
+                                      </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="number">Phone Number</label>
+                                    <input type="number" class="form-control" id="number" value="9843000000">
+                                  </div>
+                                </div>
+
+                              </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

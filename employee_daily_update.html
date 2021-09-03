@@ -1,0 +1,291 @@
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>$('.accordion-toggle').click(function(){
+        $('.hiddenRow').hide();
+        $(this).next('tr').find('.hiddenRow').show();
+        });</script>
+    <title>Attendance System</title>
+</head>
+<body>
+    <section class="employee_page">
+        <div class="container-fluid row">
+            <div class="col-md-2 col-sm-1 col-sm-1">
+                <div class="sidenav">
+                    <div class="sidenav-top">
+                        <a href="/" class="logo d-flex"><img src="./images/logo.svg" alt=""><span>Pizza Hut</span></a>
+                        <ul class="nav-links">
+                            <li><a href="/" ><img src="./images/Dashboard-icon.svg" alt=""><span>Dashboard</span></a></li>
+    
+                            <li><a href="/employees"><img src="./images/employee-icon.svg" alt=""><span>Employees</span></a></li>
+    
+                            <li><a href="/calendar"><img src="./images/calendar-icon.svg" alt=""><span>Calendar</span></a></li>
+    
+                            <li><a href="/leave" ><img src="./images/leave-icon.svg" alt=""><span>Leave</span></a></li>
+    
+                            <li><a href="/record"><img src="./images/record-icon.svg" alt=""><span>Record</span></a></li>
+    
+                        </ul>
+                    </div>
+                    
+                        <a href="/email" class="contact-admin-btn"><img src="./images/contact-admin-logo.svg" alt="">Contact Admin</a>
+                </div>
+                
+            </div>
+
+            <div class="col-md-10">
+                <div class="header">
+                    <a href="/" class="page-title">Employees</a>
+                    <div class="checkin-user">
+                        <a href="/checkin" class="checkin-btn"><img src="./images/checkin-icon.svg" alt="">Check In</a>
+                        <a href="/notification" class="notify-btn"><img src="./images/notification-icon.svg" alt=""></a>
+                        <div class="dropdown">
+                            <div class="dropbtn user">
+                                <img src="images/user-img.svg" alt=""></img><span class="username">John Wick</span>
+                                <img src="images/user-dropdown-icon.svg" alt=""></img>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#"><img src="./images/user-icon.svg">Profile</a>
+                                <a href="#"><img src="./images/chnage-pass-icon.svg">Change Password</a>
+                                <a href="/login"><img src="./images/logout-icon.svg">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- contents of employee page -->
+     
+                    
+                <div class="scrollbar-list" id="style-1">
+                    <div class="force-overflow ">
+                        <table data-toggle="table" 
+       data-classes="table"
+       class="borderless"
+       data-striped="false"
+       data-sort-name="Quality"
+       data-sort-order="desc"
+       style="border-collapse:collapse;"
+       
+       
+       >
+    <thead class="h-line">
+    <tr>
+        <th data-field="emp_date" data-sortable="true"><span>Date</span></th>
+        <th data-field="emp_update" data-sortable="true"><span>Update</span></th>
+        <th data-field="emp_time" data-sortable="true"><span>Time</span></th>
+        <th data-field="emp_details" data-sortable="false"><span style="vertical-align: 35%; margin-left: 8px;">Details</span></th>
+    </tr>
+    
+    </thead>
+    
+    <tbody>
+        <tr  colspan="1" class="accordion-toggle emp_details position-relative " data-toggle="collapse" data-target="#demo1">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+        <tr class="p">
+            <td colspan="6" class="hiddenRow p-0">
+            <div class="accordian-body collapse p-3" id="demo1">
+            <p>No : <span>1</span></p>
+            <p>Date : <span>12 Jan 2018</span> </p>
+            <p>Description : <span>Good</span> </p>
+            <p>Credit : <span>$150.00</span> </p>
+            <p>Debit : <span></span></p>
+            <p>Balance : <span>$150.00</span></p>
+            </div>
+            </td>
+            </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Login</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>forgot Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>employee Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Login</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>  
+        
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Styling pages</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Authentication</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>  
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>calendar</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>  
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Home Page</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>
+
+        <tr  class="emp_details ">
+            <td >05 July 2021</td>
+            <td>Login</td>
+            <td>06 Jul 2021</td>
+            <td>View More <img src="./images/view_drop-icon.svg" alt=""></td>
+        </tr>  
+         </tbody>
+</table>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html> 
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+<title> Table Row Toggel </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="custom.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>$('.accordion-toggle').click(function(){
+    $('.hiddenRow').hide();
+    $(this).next('tr').find('.hiddenRow').show();
+    });</script>
+</head>
+<body>
+    <div class="scrollbar-list" id="style-1" class="col-md-10 offset-md-2">
+        <div class="force-overflow">
+            <table class="table table-bordered borderless"
+            data-toggle="table" 
+       data-classes="table"
+       data-striped="false"
+       data-sort-name="Quality"
+       data-sort-order="desc"
+             style="border-collapse:collapse;">
+                <thead class="h-line">
+                <tr>
+                <th data-field="emp_date" data-sortable="true">No.</th>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Credit</th>
+                <th>Debit</th>
+                <th>Balance</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr colspan="1" data-toggle="collapse" data-target="#demo1" class="accordion-toggle">
+                <td>1</td>
+                <td>12 Jan 2018</td>
+                <td>Good</td>
+                <td>$150.00</td>
+                <td> - </td>
+                <td>$150.00</td>
+                </tr>
+                <tr class="p">
+                <td colspan="6" class="hiddenRow p-0">
+                <div class="accordian-body collapse p-3" id="demo1">
+                <p>No : <span>1</span></p>
+                <p>Date : <span>12 Jan 2018</span> </p>
+                <p>Description : <span>Good</span> </p>
+                <p>Credit : <span>$150.00</span> </p>
+                <p>Debit : <span></span></p>
+                <p>Balance : <span>$150.00</span></p>
+                </div>
+                </td>
+                </tr>
+                
+                </tbody>
+                </table>
+        </div>
+        
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+</html> -->

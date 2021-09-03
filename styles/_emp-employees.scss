@@ -19,15 +19,18 @@
   min-height: 450px;
 }
 
-.scrollbar-card {
-  height: 753px;
+.scrollbar-card,
+.scrollbar-list {
+  height: 663px;
   width: 100%;
   overflow-y: scroll;
+  background-color: #ffffff;
 }
 
 .employee_contents {
   background: #ffffff;
   padding: 20px 12px 0 16px;
+  margin-bottom: 24px;
   .employee_filters {
     flex-wrap: wrap;
     @include flex(space-between, center, row);
@@ -120,6 +123,7 @@
         color: #565656;
         transition: 0.3s ease-in-out;
         display: inline-block;
+        margin-bottom: 3px;
         &:hover {
           background: #f03454;
           color: #ffffff;
@@ -164,6 +168,11 @@ table {
 
 .bootstrap-table {
   border: none !important;
+}
+.tbody {
+  height: 50px;
+  overflow-y: auto;
+  width: 100%;
 }
 .tbody,
 .emp_details {
@@ -273,5 +282,11 @@ th {
         margin-right: 8px;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1246px) {
+  .employee_contents .pagination ul a {
+    margin-bottom: unset;
   }
 }
