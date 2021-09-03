@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .checkout {
   font-family: Lexend;
   font-style: normal;
@@ -17,204 +10,7 @@
   padding-left: 0px;
 }
 
-.sidenav {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  background-color: #ffffff;
-}
-
-.sidenav-top {
-  margin-bottom: 561px;
-}
-
-.logo {
-  padding: 22px 0px 36px 24px;
-  white-space: nowrap;
-  font-weight: 500;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-.logo img {
-  margin-right: 16px;
-}
-
-.logo span {
-  font-weight: 500;
-  font-size: 18px;
-  color: #2C2C2C;
-}
-
-.nav-links {
-  padding: 0;
-}
-
-.nav-links li {
-  list-style: none;
-}
-
-.nav-links li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 18px;
-  text-decoration: none;
-  border: 1px solid #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-
-.nav-links li a .sidenav-img {
-  color: #565656;
-  margin-right: 16px;
-}
-
-.nav-links li a span {
-  font-weight: 500;
-  font-size: 16px;
-  color: #565656;
-}
-
-.nav-links li a:hover {
-  background: #F03454;
-}
-
-.nav-links li a:hover span {
-  color: #ffffff;
-}
-
-.nav-links li a:hover .sidenav-img {
-  color: white !important;
-}
-
-.contact-admin-btn {
-  padding: 16px 16.5px;
-  margin-bottom: 20px;
-  display: block;
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  color: #e74948;
-  text-decoration: none;
-}
-
-.contact-admin-btn img {
-  margin-right: 10.5px;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar .page-title {
-  font-weight: 500;
-  font-size: 28px;
-  color: #2f2f2f;
-  margin: 32px 0px;
-  text-decoration: none;
-}
-
-.navbar .checkin-user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar .checkin-user .checkin-btn {
-  padding: 13.5px 42.5px;
-  background: #17b182;
-  font-weight: 500;
-  font-size: 14px;
-  color: white;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-  text-decoration: none;
-}
-
-.navbar .checkin-user .checkin-btn:hover {
-  -webkit-box-shadow: 0px 4px 8px rgba(23, 177, 130, 0.25);
-          box-shadow: 0px 4px 8px rgba(23, 177, 130, 0.25);
-}
-
-.navbar .checkin-user .checkin-btn img {
-  margin-right: 8px;
-}
-
-.navbar .checkin-user .notify-btn {
-  padding: 11.35px 13.53px;
-  border: 1px solid #e9e9e9;
-  margin: 0 8px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  border: 1px solid #e9e9e9;
-  padding: 11.8px 13px;
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.dropdown .username {
-  margin: 0 8px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 176px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  padding: 9px 13px;
-  text-decoration: none;
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  color: #2f2f2f;
-}
-
-.dropdown-content a img {
-  margin-right: 12px;
-}
-
-.dropdown-content a:hover {
-  background: #fff4f4;
-  color: #e73d3d;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 form {
-  margin: 30px;
   padding: 24px;
   background: #FFFFFF;
 }
@@ -269,12 +65,14 @@ form {
   padding: 16px 32px;
   background: #F03454;
   border: none;
-  margin-bottom: 212px;
 }
 
 @media screen and (min-width: 770px) {
   .date-box {
     margin-right: 96px !important;
+  }
+  .checkout-btn {
+    margin-bottom: 120px !important;
   }
 }
 

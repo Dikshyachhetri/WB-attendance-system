@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- css link  -->
-    <link rel="stylesheet" href="../css/notification.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- font links  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,49 +24,64 @@
 
 <body>
     <section class="notification">
-        <div class="container-fluid row ">
-            <div class="col-md-2 col-sm-2 d-flex">
-                <div class="sidenav d-flex justify-content-between">
+        <div class="container-fluid row">
+            <div class="col-md-2 col-sm-1 d-flex">
+                <div class="sidenav d-flex justify-content-between flex-column">
                     <div class="sidenav-top">
                         <a href="/" class="logo d-flex"><img src="../images/logo.svg" alt=""><span>Pizza Hut</span></a>
                         <ul class="nav-links">
                             <li><a href="/">
-                                <!-- <img src="../images/Dashboard-icon.svg" alt=""> -->
-                                <svg class="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 8.66667H7.33333V2H2V8.66667ZM2 14H7.33333V10H2V14ZM8.66667 14H14V7.33333H8.66667V14ZM8.66667 2V6H14V2H8.66667Z" fill="#565656"/>
+                                    <!-- <img src="../images/Dashboard-icon.svg" alt=""> -->
+                                    <svg id="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 8.66667H7.33333V2H2V8.66667ZM2 14H7.33333V10H2V14ZM8.66667 14H14V7.33333H8.66667V14ZM8.66667 2V6H14V2H8.66667Z"
+                                            fill="#565656" />
                                     </svg>
-                                <span>Dashboard</span></a>
+                                    <span>Dashboard</span></a>
                             </li>
 
                             <li><a href="/employees">
-                                <!-- <img src="../images/employee-icon.svg" alt=""> -->
-                                <svg class="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.6699 7.32812C11.7766 7.32812 12.6633 6.43479 12.6633 5.32812C12.6633 4.22146 11.7766 3.32812 10.6699 3.32812C9.56325 3.32812 8.66992 4.22146 8.66992 5.32812C8.66992 6.43479 9.56325 7.32812 10.6699 7.32812ZM5.33659 7.32812C6.44325 7.32812 7.32992 6.43479 7.32992 5.32812C7.32992 4.22146 6.44325 3.32812 5.33659 3.32812C4.22992 3.32812 3.33659 4.22146 3.33659 5.32812C3.33659 6.43479 4.22992 7.32812 5.33659 7.32812ZM5.33659 8.66146C3.78326 8.66146 0.669922 9.44146 0.669922 10.9948V12.6615H10.0033V10.9948C10.0033 9.44146 6.88992 8.66146 5.33659 8.66146ZM10.6699 8.66146C10.4766 8.66146 10.2566 8.67479 10.0233 8.69479C10.7966 9.25479 11.3366 10.0081 11.3366 10.9948V12.6615H15.3366V10.9948C15.3366 9.44146 12.2233 8.66146 10.6699 8.66146Z" fill="#565656"/>
+                                    <!-- <img src="../images/employee-icon.svg" alt=""> -->
+                                    <svg id="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.6699 7.32812C11.7766 7.32812 12.6633 6.43479 12.6633 5.32812C12.6633 4.22146 11.7766 3.32812 10.6699 3.32812C9.56325 3.32812 8.66992 4.22146 8.66992 5.32812C8.66992 6.43479 9.56325 7.32812 10.6699 7.32812ZM5.33659 7.32812C6.44325 7.32812 7.32992 6.43479 7.32992 5.32812C7.32992 4.22146 6.44325 3.32812 5.33659 3.32812C4.22992 3.32812 3.33659 4.22146 3.33659 5.32812C3.33659 6.43479 4.22992 7.32812 5.33659 7.32812ZM5.33659 8.66146C3.78326 8.66146 0.669922 9.44146 0.669922 10.9948V12.6615H10.0033V10.9948C10.0033 9.44146 6.88992 8.66146 5.33659 8.66146ZM10.6699 8.66146C10.4766 8.66146 10.2566 8.67479 10.0233 8.69479C10.7966 9.25479 11.3366 10.0081 11.3366 10.9948V12.6615H15.3366V10.9948C15.3366 9.44146 12.2233 8.66146 10.6699 8.66146Z"
+                                            fill="#565656" />
                                     </svg>
-                                <span>Employees</span></a></li>
+                                    <span>Employees</span></a></li>
 
                             <li><a href="/calendar">
-                                <!-- <img src="../images/calendar-icon.svg" alt=""> -->
-                                <svg class="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.75 13.75C1.75 14.0266 1.97344 14.25 2.25 14.25H13.75C14.0266 14.25 14.25 14.0266 14.25 13.75V7.1875H1.75V13.75ZM13.75 2.875H11.125V1.875C11.125 1.80625 11.0688 1.75 11 1.75H10.125C10.0562 1.75 10 1.80625 10 1.875V2.875H6V1.875C6 1.80625 5.94375 1.75 5.875 1.75H5C4.93125 1.75 4.875 1.80625 4.875 1.875V2.875H2.25C1.97344 2.875 1.75 3.09844 1.75 3.375V6.125H14.25V3.375C14.25 3.09844 14.0266 2.875 13.75 2.875Z" fill="#565656"/>
+                                    <!-- <img src="../images/calendar-icon.svg" alt=""> -->
+                                    <svg id="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.75 13.75C1.75 14.0266 1.97344 14.25 2.25 14.25H13.75C14.0266 14.25 14.25 14.0266 14.25 13.75V7.1875H1.75V13.75ZM13.75 2.875H11.125V1.875C11.125 1.80625 11.0688 1.75 11 1.75H10.125C10.0562 1.75 10 1.80625 10 1.875V2.875H6V1.875C6 1.80625 5.94375 1.75 5.875 1.75H5C4.93125 1.75 4.875 1.80625 4.875 1.875V2.875H2.25C1.97344 2.875 1.75 3.09844 1.75 3.375V6.125H14.25V3.375C14.25 3.09844 14.0266 2.875 13.75 2.875Z"
+                                            fill="#565656" />
                                     </svg>
-                                <span>Calendar</span></a>
+                                    <span>Calendar</span></a>
                             </li>
 
                             <li><a href="/leave">
-                                <!-- <img src="../images/leave-icon.svg" alt=""> -->
-                                <svg class="sidenav-img" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.60078 14.4016H1.80078V1.60156H9.60078M16.2008 8.00156L12.6008 11.4682L16.2008 8.00156ZM16.2008 8.00156L12.6008 4.80156L16.2008 8.00156ZM16.2008 8.00156H4.80078H16.2008Z" stroke="#565656"/>
+                                    <!-- <img src="../images/leave-icon.svg" alt=""> -->
+                                    <svg id="sidenav-img" width="18" height="16" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.60078 14.4016H1.80078V1.60156H9.60078M16.2008 8.00156L12.6008 11.4682L16.2008 8.00156ZM16.2008 8.00156L12.6008 4.80156L16.2008 8.00156ZM16.2008 8.00156H4.80078H16.2008Z"
+                                            stroke="#565656" />
                                     </svg>
-                                    
-                                <span>Leave</span></a></li>
+
+                                    <span>Leave</span></a></li>
 
                             <li><a href="/record">
-                                <!-- <img src="../images/record-icon.svg" alt=""> -->
-                                <svg class="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.33659 1.32812H2.66992V14.6615H13.3366V5.32812L9.33659 1.32812ZM10.6699 11.9948H5.33659V10.6615H10.6699V11.9948ZM10.6699 9.32812H5.33659V7.99479H10.6699V9.32812ZM8.66992 5.99479V2.32812L12.3366 5.99479H8.66992Z" fill="#565656"/>
+                                    <!-- <img src="../images/record-icon.svg" alt=""> -->
+                                    <svg id="sidenav-img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.33659 1.32812H2.66992V14.6615H13.3366V5.32812L9.33659 1.32812ZM10.6699 11.9948H5.33659V10.6615H10.6699V11.9948ZM10.6699 9.32812H5.33659V7.99479H10.6699V9.32812ZM8.66992 5.99479V2.32812L12.3366 5.99479H8.66992Z"
+                                            fill="#565656" />
                                     </svg>
-                                <span>Daily Updates</span></a>
+                                    <span>Daily Updates</span></a>
                             </li>
 
                         </ul>
@@ -98,7 +113,7 @@
                     </div>
                 </div>
                 <!-- <div class="row"> -->
-                <div class=" header">
+                <div class=" event-header">
                     <img src="../images/green.svg" />
                     <span class="color-icons">Leave</span>
                     <img src="../images/orange.svg" />
@@ -108,7 +123,7 @@
                     <img src="../images/red.svg" />
                     <span class="color-icons">Holiday</span>
                 </div>
-                <div class="not-lists">
+                <!-- <div class="not-lists">
                     <div>
                         <p class="not-date first-date">June 24, 2021</p>
                         <p class="not-time">15:25:44</p>
@@ -141,7 +156,58 @@
                             Your leave request has been granted
                         </div>
                     </div>
+                </div> -->
+
+                <div class="timeline">
+                    <div class="entry green">
+                        <div class="title">
+                            <p class="not-date">June 27, 2021</p>
+                            <p class="not-time">15:25:44</p>
+                        </div>
+                        <div class="body not-details">
+                            <p> Your leave request has been granted</p>
+                        </div>
+                    </div>
+                    <div class="entry red">
+                        <div class="title">
+                            <p class="not-date">June 26, 2021</p>
+                            <p class="not-time">15:25:44</p>
+                        </div>
+                        <div class="body not-details">
+                            <p> Your leave request has been granted</p>
+
+                        </div>
+                    </div>
+                    <div class="entry blue">
+                        <div class="title">
+                            <p class="not-date">June 26, 2021</p>
+                            <p class="not-time">15:25:44</p>
+                        </div>
+                        <div class="body not-details">
+                            <p> Your leave request has been granted</p>
+                        </div>
+                    </div>
+                    <div class="entry yellow">
+                        <div class="title">
+                            <p class="not-date">June 26, 2021</p>
+                            <p class="not-time">15:25:44</p>
+                        </div>
+                        <div class="body not-details">
+                            <p> Your leave request has been granted</p>
+                        </div>
+                    </div>
+                    <div class="entry blue">
+                        <div class="title">
+                            <p class="not-date">June 26, 2021</p>
+                            <p class="not-time">15:25:44</p>
+                        </div>
+                        <div class="body not-details">
+                            <p> Your leave request has been granted</p>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </div>
     </section>

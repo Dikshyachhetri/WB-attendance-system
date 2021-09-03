@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .login-page {
     font-family: Lexend;
@@ -35,9 +30,6 @@
     color: #585858;
 }
 
-.form-check {
-    margin-bottom: 72px;
-}
 
 .check-box {
     font-family: Lexend;
@@ -81,6 +73,9 @@
     font-size: 16px;
     border: none;
     color: #FFFFFF;
+    &:hover {
+        background: #e73d3d;
+    }
 }
 
 // forgot password page 
@@ -120,12 +115,18 @@
 
     }
 
-    .check-box {
-        margin-right: 165px !important;
+    
+}
+@media screen and (min-width:768px) {
+    .remember-me{
+        margin-bottom: 72px !important;
+    }
+    .submit-btn{
+        margin-bottom: 62px !important;
+
     }
 
 }
-
 @media screen and (min-width:375px) {
     .heading {
         margin-bottom: 60px;
@@ -135,12 +136,18 @@
         padding: 50px 10px 0px 25px;
     }
 
-    .check-box {
+    .remember-me-check-box  {
         margin-right: 105px;
     }
 
-    .submit-btn {
-        margin-bottom: 62px;
+    .submit-btn, .login-btn {
+        margin-bottom: 20px;
 
+    }
+    .remember-me{
+        margin-bottom:20px;
+    }
+    .back-arrow-login{
+margin-bottom:10px;
     }
 }
